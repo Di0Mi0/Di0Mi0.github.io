@@ -48,9 +48,9 @@ function drawField(){
 function startLife(){
 	//моделирование жизни
 	var mas2 = [];
-	for (var i=0; i<30; i++){
+	for (var i=0; i<60; i++){
 		mas2[i]=[];
-		for (var j=0; j<30; j++){
+		for (var j=0; j<60; j++){
 			var neighbors = 0;
 			if (mas[fpm(i)-1][j]==1) neighbors++;//up
 			if (mas[i][fpp(j)+1]==1) neighbors++;//right
@@ -71,11 +71,11 @@ function startLife(){
 }
 
 function fpm(i){
-	if(i==0) return 30;
+	if(i==0) return 60;
 	else return i;
 }
 function fpp(i){
-	if(i==29) return -1;
+	if(i==59) return -1;
 	else return i;
 }
 
