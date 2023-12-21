@@ -37,7 +37,7 @@ goLife();
 function drawField(){
 	ctx.clearRect(0, 0, 600, 600);
 	for (var i=0; i<60; i++){
-		for (var j=0; j<30; j++){
+		for (var j=0; j<60; j++){
 			if (mas[i][j]==1){
 				ctx.fillRect(j*10, i*10, 10, 10);
 			}
