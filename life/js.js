@@ -11,16 +11,10 @@ canvas.onclick = function(event){
 	console.log(y);
 	x = Math.floor(x/10); //300 /10 = 30
 	y = Math.floor(y/10); //300 /10 = 
-
 if(mas[y][x]==1){
 		mas[y][x]=0;
 }else{
 		mas[y][x]=1;
-}
-
-
-	console.log(mas);
-	drawField();
 }
 
 function goLife(){
