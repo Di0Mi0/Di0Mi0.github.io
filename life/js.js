@@ -9,8 +9,8 @@ canvas.onclick = function(event){
 	var y = event.offsetY;
 	console.log(x);
 	console.log(y);
-	x = Math.floor(x/10); //300 /10 = 30
-	y = Math.floor(y/10); //300 /10 = 
+	x = Math.floor(x/10); //600 /10 = 60
+	y = Math.floor(y/10); //600 /10 = 
 
 if(mas[y][x]==1){
 		mas[y][x]=0;
