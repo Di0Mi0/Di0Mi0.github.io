@@ -24,7 +24,7 @@ if(mas[y][x]==1){
 }
 
 function goLife(){
-	var n=30, m=30;
+	var n=60, m=60;
 	for (var i=0; i<m; i++){
 		mas[i]=[];
 		for (var j=0; j<n; j++){
@@ -35,8 +35,8 @@ function goLife(){
 goLife();
 
 function drawField(){
-	ctx.clearRect(0, 0, 300, 300);
-	for (var i=0; i<30; i++){
+	ctx.clearRect(0, 0, 600, 600);
+	for (var i=0; i<60; i++){
 		for (var j=0; j<30; j++){
 			if (mas[i][j]==1){
 				ctx.fillRect(j*10, i*10, 10, 10);
